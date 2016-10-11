@@ -38,7 +38,7 @@ public class Vertice
      */
     public boolean contieneUnVecino(Arista arista)
     {
-	return this.vecindad.contains(arista)
+	return this.vecindad.contains(arista);
     }
 
     /**
@@ -99,7 +99,7 @@ public class Vertice
      */
     public boolean equals(Object vertice2)
     {
-	if( !vertice2 instanceof Vertice)
+	if( !(vertice2 instanceof Vertice))
 	    return false;
 
 	Vertice v = (Vertice) vertice2;

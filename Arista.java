@@ -28,9 +28,9 @@ public class Arista implements Comparable<Arista>
      * @param vertice2. Segundo vértice para formar la arista
      * @param peso. Define el coste de ir desde el vertice1 al vertice2 y viceversa(arista no dirigida)
      **/
-    public Artista(Vertice vertice1, Vertice vertice2, int peso)
+    public Arista(Vertice vertice1, Vertice vertice2, int peso)
     {
-	if(vertice1.getEtiqueta.comparteTo(vertice2.getEtiqueta) <= 0)
+	if(vertice1.getEtiqueta().compareTo(vertice2.getEtiqueta()) <= 0)
 	    {
 		this.vertice1 = vertice1;
 		this.vertice2 = vertice2;

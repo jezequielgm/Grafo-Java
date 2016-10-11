@@ -93,7 +93,7 @@ public class Grafo{
      **/
     public boolean contieneLaArista(Arista arista)
     {
-	if(arista.getVetice1() == null || arista.getVertice2() == null)
+	if(arista.getVertice1() == null || arista.getVertice2() == null)
 	    return false;
 	return this.aristas.containsKey(arista.hashCode());
     }
@@ -145,7 +145,7 @@ public class Grafo{
      **/
     public boolean insertarVertice(Vertice vertice, boolean sobreescribeVertice)
     {
-	Vertice actual = this.vertices.get(vertice.getEtiqueta);
+	Vertice actual = this.vertices.get(vertice.getEtiqueta());
 	if(actual != null) //existía previamente?
 	    {
 		if(!sobreescribeVertice)
@@ -156,7 +156,7 @@ public class Grafo{
 		
 	    }
 
-	vertices.put(vertice.getEtiqueta, vertice);
+	vertices.put(vertice.getEtiqueta(), vertice);
 	return true;
     }
 

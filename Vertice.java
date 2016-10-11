@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /*
  * Cada instancia a esta clase representa cada vertice
  * Cada vertice tiene asociado una etiqueta
- * Por tanto, la etiqueta tiene un contenido único
+ * Por tanto, la existencia de esta no permite vértices duplicados
  * El array de lista vecindad contiene las aristas incidentes al vértice
 */
 
